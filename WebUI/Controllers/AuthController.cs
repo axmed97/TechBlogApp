@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using WebUI.DTOs;
 using WebUI.Models;
 
@@ -9,10 +10,12 @@ namespace WebUI.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
-        public AuthController(UserManager<User> userManager, SignInManager<User> signInManager)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public AuthController(UserManager<User> userManager, SignInManager<User> signInManager, IHttpContextAccessor httpContextAccessor)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _httpContextAccessor = httpContextAccessor;
         }
         public IActionResult Login()
         {
@@ -45,7 +48,18 @@ namespace WebUI.Controllers
                 ModelState.AddModelError("Error", "Email or Password is not valid!");
                 return View();
             }
-            return RedirectToAction("Index", "Home");
+            else
+            {
+                var c = _httpContextAccessor.HttpContext.Request.Query["controller"];
+                var a = _httpContextAccessor.HttpContext.Request.Query["action"];
+                var i = _httpContextAccessor.HttpContext.Request.Query["id"];
+                var s = _httpContextAccessor.HttpContext.Request.Query["seourl"];
+                if (!string.IsNullOrWhiteSpace(c))
+                {
+                    return RedirectToAction(a, c, new { Id = i, seoUrl = s });
+                }
+                return RedirectToAction("Index", "Home");
+            }
         }
 
         public IActionResult Register()

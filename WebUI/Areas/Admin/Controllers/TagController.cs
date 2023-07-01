@@ -6,7 +6,7 @@ using WebUI.Models;
 namespace WebUI.Areas.Admin.Controllers
 {
     [Area(nameof(Admin))]
-    [Authorize]
+    [Authorize(Roles = "Admin, Admin Editor, Moderator")]
     public class TagController : Controller
     {
         private readonly AppDbContext _context;

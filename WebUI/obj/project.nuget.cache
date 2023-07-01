@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L3OAOoGZ9hha+qaKjNBp4qCXpYOTI9j6Ae3tg38vgqI9T29cwt632f556KYDl8yRjDNZHeJchEaNGEawKm5gBw==",
+  "dgSpecHash": "Go5BSq/LMYTHX5kjjkC/oKHdqwuM4G+H0RtM48/tlEXPoC/00TpazuvLvOVnFYoaF3bGbzKy1RiOSqHRwoMNqQ==",
   "success": true,
-  "projectFilePath": "D:\\Visual Studio IDE Projects\\TechBlogWebApp\\WebUI\\WebUI.csproj",
+  "projectFilePath": "D:\\Visual Studio IDE Project\\TechBlog\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\axmed\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\axmed\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -11,6 +11,8 @@
     "C:\\Users\\axmed\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",
     "C:\\Users\\axmed\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.5\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\axmed\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.5\\microsoft.aspnetcore.identity.ui.7.0.5.nupkg.sha512",
+    "C:\\Users\\axmed\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\axmed\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\7.0.5\\microsoft.aspnetcore.mvc.razor.runtimecompilation.7.0.5.nupkg.sha512",
     "C:\\Users\\axmed\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\axmed\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\axmed\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
